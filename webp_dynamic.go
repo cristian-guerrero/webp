@@ -237,6 +237,8 @@ func init() {
 		}
 	}()
 
+	preloadNative()
+
 	libwebp, err = loadLibrary(libname)
 	if err == nil {
 		libwebpDemux, err = loadLibrary(libnameDemux)
